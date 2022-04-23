@@ -146,6 +146,25 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add .
+<span class="o">!</span>git commit -m .
+<span class="o">!</span>git push
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span> 
 <span class="kn">import</span> <span class="nn">tensorflow.experimental.numpy</span> <span class="k">as</span> <span class="nn">tnp</span> 
@@ -229,13 +248,8 @@ array([ 4.12539849,  5.46696729,  5.27243374, ...,  2.89712332,
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>함수 $L(\mu,\sigma)$을 최대화하는 $(\mu,\sigma)$를 <code>tf.GradeintTape()</code>를 활용하여 추정하라. (경사하강법 혹은 경사상승법을 사용하고 $\mu$의 초기값은 2로 $\sigma$의 초기값은 3으로 설정할 것)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>$L(\mu,\sigma)=\prod_{i=1}^{n}f(x_i), \quad f(x_i)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x_i-\mu}{\sigma})^2}$</p>
+<p><strong>hint</strong>: $L(\mu,\sigma)$를 최대화하는 $(\mu,\sigma)$는 $\log L(\mu,\sigma)$를 역시 최대화한다는 사실을 이용할 것.</p>
 
 </div>
 </div>
@@ -306,6 +320,7 @@ array([ 4.12539849,  5.46696729,  5.27243374, ...,  2.89712332,
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>(2)</code> 경사하강법과 MSE loss의 도함수를 이용하여 $\beta_0,\beta_1$을 추정하라.</p>
+<p><strong>주의</strong> tf.GradeintTape()를 이용하지 말고 MSE loss의 해석적 도함수를 사용할 것.</p>
 
 </div>
 </div>
