@@ -640,8 +640,7 @@ array([ 4.12539849,  5.46696729,  5.27243374, ...,  2.89712332,
 <p>
 $$L(\beta_0,\beta_1)=\prod_{i=1}^{n}f(y_i), \quad f(y_i)=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(y_i-\mu_i)^2}, \quad \mu_i=\beta_0+\beta_1 x_i$$
 </p>
-<p>를 최대화하는 $\beta_0,\beta_1$을 구하면된다.</p>
-<p>그런데 이것은 아래를 최소화하는 $\beta_0,\beta_1$을 구하는 것과 같다.</p>
+<p>를 최대화하는 $\beta_0,\beta_1$을 구하면된다. 그런데 이것은 아래를 최소화하는 $\beta_0,\beta_1$을 구하는 것과 같다.</p>
 <p>
 $$-\log L(\beta_0,\beta_1) = \sum_{i=1}^{n}(y_i-\beta_0-\beta_1x_i)^2$$
 </p>
@@ -779,7 +778,7 @@ $$-\log L(\beta_0,\beta_1) = \sum_{i=1}^{n}(y_i-\beta_0-\beta_1x_i)^2$$
 <p>아래의 모형을 생각하자.</p>
 <ul>
 <li>$Y_i \overset{iid}{\sim} Ber(\pi_i)$</li>
-<li>$\pi_i = \frac{exp(w_0+w_1x_i)}{1+\exp(w_0+w_1x_i)}=\frac{\exp(-1+5x_i)}{1+\exp(-1+5x_i)}$ </li>
+<li>$\pi_i = \frac{\exp(w_0+w_1x_i)}{1+\exp(w_0+w_1x_i)}=\frac{\exp(-1+5x_i)}{1+\exp(-1+5x_i)}$ </li>
 </ul>
 
 </div>
