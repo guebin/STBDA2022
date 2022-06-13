@@ -932,7 +932,7 @@ window.onload = wrap_img;
 <p>
 $$y_i= \beta_0 + \sum_{k=1}^{5} \beta_k \cos(k t_i)+\epsilon_i$$
 </p>
-<p>여기에서 $t=(t_1,\dots,t_{1000})=$ <code>np.linspace(0,5,1000)</code> 이다. 그리고 $\epsilon_i \sim i.i.d~ N(0,\sigma^2)$, 즉 서로 독립인 표준정규분포에서 추출된 샘플이다. 위의 모형에서 아래와 같은 데이터를 관측했다고 가정하자.</p>
+<p>여기에서 $t=(t_1,\dots,t_{1000})=$ <code>np.linspace(0,5,1000)</code> 이다. 그리고 $\epsilon_i \sim i.i.d~ N(0,\sigma^2)$, 즉 서로 독립인 표준정규분포에서 추출된 샘플이다. 위의 모형에서 아래와 같은 데이터를 관측했다고 가정하자. ($\beta_0,\dots,\beta_5$의 참값은 각각 -2, 3, 1, 0, 0, 0.5 이다.)</p>
 
 </div>
 </div>
@@ -986,14 +986,6 @@ $$y_i= \beta_0 + \sum_{k=1}^{5} \beta_k \cos(k t_i)+\epsilon_i$$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>tf.keras를 이용하여 $\beta_0,\dots,\beta_5$를 추정하라. ($\beta_0,\dots,\beta_5$의 참값은 각각 -2, 3, 1, 0, 0, 0.5 이다)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><code>(3)</code> 모형에 대한 설명 중 옳은 것을 모두 골라라.</p>
 
 </div>
@@ -1034,7 +1026,7 @@ $$y_i= \beta_0 + \sum_{k=1}^{5} \beta_k \cos(k t_i)+\epsilon_i$$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>(4)</code> 다음은 아래 모형을 학습한 결과이다. 옳게 해석한 것을 모두 고르시오.</p>
+<p><code>(4)</code> 다음은 위의 모형을 학습한 결과이다. 옳게 해석한 것을 모두 고르시오.</p>
 
 </div>
 </div>
